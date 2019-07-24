@@ -42,6 +42,11 @@ figure {
     border-radius: 15px;
 }
 
+.register-body {
+    height: fit-content;
+    padding: 2rem auto;
+}
+
 .login-body p {
     margin: 0 auto;
 }
@@ -75,7 +80,7 @@ figure {
 .register-title h1 {
     margin: 0;
     padding: 0.5rem;
-    font-size: 27px;
+    font-size: 23px;
 }
 
 .info-new-user,
@@ -89,8 +94,8 @@ figure {
 }
 
 .info-new-user input,
-.budget-page input,
-.info-user input {
+.info-user input,
+.income {
     -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
@@ -98,7 +103,6 @@ figure {
     border-radius: 15px;
     border: 2px solid #53BFC1;
     padding: 0.5rem;
-    /* border: none; */
 }
 
 .buttons {
@@ -113,28 +117,82 @@ figure {
 
 .budget-page {
     width: 99%;
+    height: fit-content;
+    padding: 1rem;
 }
 
 .budget-page p,
 .budget-page h2 {
     padding: 0rem 2rem;
+    margin: 0.7rem;
+}
+
+.expenses-check span {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.input-expenses {
+    justify-content: space-around;
+    width: 4.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    border-radius: 15px;
+    border: 2px solid #53BFC1;
+    padding: 0.5rem;
+}
+
+.plus-button {
+    color: whitesmoke;
+    background-color: #D81E5B;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding: 2px 8px;
     margin: 0.5rem;
 }
 
-
-/* .expenses-check {
+.info-budget {
     display: flex;
-} */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.expenses-check {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.expenses-amount {
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+}
 
 
 /*Ids*/
 
 #accept,
 #enter,
-#register-button {
+#register-button,
+#accept-budget {
     background-color: #53BFC1;
     width: fit-content;
     margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+#accept:hover,
+#enter:hover,
+#register-button:hover,
+#accept-budget:hover {
+    background-color: #D81E5B;
+    transform: scale(1.1);
 }
 
 
@@ -196,9 +254,13 @@ figure {
     }
     .info-new-user input {
         width: 20rem;
-        font-size: large;
     }
     .budget-page {
         width: 70%;
+    }
+    .register-title h1 {
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 35px;
     }
 }
