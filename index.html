@@ -40,7 +40,38 @@
         </div>
     </div>
 </section>
-<section class="welcome"></section>
+<section id="section-welcome" class="welcome">
+    <main class="main-login">
+        <header>
+            <p>¡Bienvenida!</p>
+            <figure><img src="img/logo-easy-budget.png" alt="Logo Easy Budget"></figure>
+        </header>
+        <main class="initial-budget">
+            <section class="global-budget">
+                <p>Vamos a empezar:</p>
+                <p>¿Cuál es tu ingreso mensual?</p>
+                <input type="text" placeholder="Ingresa monto con decimales">
+            </section>
+            <section class="instructions">
+                <p>Selecciona las categorías de tus gastos recurrentes y el monto que quieres asignarle al mes</p>
+                <figure><img src="img/plus.png" alt="Agregar Categoría"></figure>
+            </section>
+            <section class="budget'categories">
+                <input type="checkbox" id="c1" checked>
+                <label for="c1"><input class="cat" type="text" placeholder="Comida"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
+                <input type="checkbox" id="c1" checked>
+                <label for="c1"><input class="cat" type="text" placeholder="Renta"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
+                <input type="checkbox" id="c1" checked>
+                <label for="c1"><input class="cat" type="text" placeholder="Transporte"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
+                <input type="checkbox" id="c1" checked>
+                <label for="c1"><input class="cat" type="text" placeholder="Pago Bootcamp"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
+                <input type="checkbox" id="c1" checked>
+                <label for="c1"><input class="cat" type="text" placeholder="Entretenimiento"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
+                <a class="btn-init-bad" href="#">Aceptar</a>
+            </section>
+        </main>
+    </main>
+</section>
 
 <body>
     <script src="main.js"></script>
