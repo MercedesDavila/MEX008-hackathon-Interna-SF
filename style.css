@@ -9,12 +9,25 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.register {
+.register,
+.login,
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.register-body {
+.logo {
+    display: flex;
+    height: 40vh;
+}
+
+.logo img {
+    margin-top: 2rem;
+    height: 90%;
+}
+
+.register-body,
+.login-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,10 +67,12 @@ body {
 .register-title h1 {
     margin: 0;
     padding: 0.5rem;
+    font-size: 27px;
 }
 
 .info-new-user,
-.budget-page {
+.budget-page,
+.info-user {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -66,7 +81,8 @@ body {
 }
 
 .info-new-user input,
-.budget-page input {
+.budget-page input,
+.info-user input {
     -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
@@ -88,11 +104,13 @@ body {
 }
 
 .budget-page {
-    width: 80%;
+    width: 99%;
 }
 
-.budget-page p {
+.budget-page p,
+.budget-page h2 {
     padding: 0rem 2rem;
+    margin: 0.5rem;
 }
 
 
@@ -103,10 +121,12 @@ body {
 
 /*Ids*/
 
-#accept {
+#accept,
+#enter,
+#register-button {
     background-color: #53BFC1;
     width: fit-content;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -120,5 +140,8 @@ body {
     .info-new-user input {
         width: 20rem;
         font-size: large;
+    }
+    .budget-page {
+        width: 70%;
     }
 }
