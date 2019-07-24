@@ -160,13 +160,13 @@ body {
 .expenses-check {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 }
 
 .expenses-amount {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 41%;
 }
 
 
@@ -179,6 +179,16 @@ body {
     background-color: #53BFC1;
     width: fit-content;
     margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+#accept:hover,
+#enter:hover,
+#register-button:hover,
+#accept-budget:hover {
+    background-color: #D81E5B;
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -192,7 +202,6 @@ body {
     }
     .info-new-user input {
         width: 20rem;
-        font-size: large;
     }
     .budget-page {
         width: 70%;
