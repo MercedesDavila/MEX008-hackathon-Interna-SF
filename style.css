@@ -53,6 +53,9 @@ body {
     padding: 1rem;
     height: fit-content;
     text-align: center;
+    -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
 }
 
 .register-title img {
@@ -67,6 +70,41 @@ body {
     padding: 0.5rem;
 }
 
+.info-new-user {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-new-user input {
+    -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    margin: 0.5rem auto;
+    border-radius: 15px;
+    border: 2px solid #53BFC1;
+    padding: 0.5rem;
+    /* border: none; */
+}
+
+.buttons {
+    border-radius: 15px;
+    width: fit-content;
+    border: none;
+    padding: 0.5rem;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#accept {
+    background-color: #53BFC1;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
 @media only screen and (min-width: 768px) {
     .register-body {
         max-width: 60%;
@@ -74,5 +112,9 @@ body {
     .register-title {
         width: 90%;
         font-size: x-large;
+    }
+    .info-new-user input {
+        width: 20rem;
+        font-size: large;
     }
 }
