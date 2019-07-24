@@ -46,31 +46,30 @@
             </div>
         </div>
     </section>
-    <section class="register hide" id="budget">
 
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Presupuesto</a>
+        <a href="#">Ahorros</a>
+        <a href="#">Ingresos</a>
+        <a href="#">Gastos</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Cerrar sesión</a>
+    </div>
+
+    <section class="register" id="budget">
         <div class="register-body">
             <div class="register-title">
-
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">Presupuesto</a>
-                    <a href="#">Ahorros</a>
-                    <a href="#">Ingresos</a>
-                    <a href="#">Gastos</a>
-                    <a href="#">Ayuda</a>
-                    <a href="#">Cerrar sesión</a>
-
-
-                </div>
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
                 <h1>Presupuesto</h1>
                 <span id="user-name"></span>
                 <figure>
                     <img src="img/logo-easy-budget.png" alt="logo">
                 </figure>
             </div>
-            <div class="budget-page hide" id="budget-page">
+            <div class="budget-page">
                 <h2>Vamos a empezar:</h2>
                 <p>¿Cuál es tu ingreso mensual?</p>
                 <input type="text" id="income" class="income">
@@ -95,7 +94,22 @@
             </div>
 
         </div>
+
     </section>
+
+    <section class="register" id="HomePage">
+        <div class="register-body">
+            <div class="register-title">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <figure>
+                    <img src="img/easy-budget.png" alt="logo">
+                </figure>
+            </div>
+            <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+        </div>
+    </section>
+
+
 </main>
 
 <body>
