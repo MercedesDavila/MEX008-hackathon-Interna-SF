@@ -46,52 +46,68 @@
             </div>
         </div>
     </section>
-    <section class="register" id="budget"></section>
-    <div class="register-body">
-        <div class="register-title">
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Presupuesto</a>
-                <a href="#">Ahorros</a>
-                <a href="#">Ingresos</a>
-                <a href="#">Gastos</a>
-                <a href="#">Ayuda</a>
-                <a href="#">Cerrar sesión</a>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Presupuesto</a>
+        <a href="#">Ahorros</a>
+        <a href="#">Ingresos</a>
+        <a href="#">Gastos</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Cerrar sesión</a>
+    </div>
+
+    <section class="register" id="budget">
+        <div class="register-body">
+            <div class="register-title">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <h1>Presupuesto</h1>
+                <span id="user-name"></span>
+                <figure>
+                    <img src="img/logo-easy-budget.png" alt="logo">
+                </figure>
             </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <div class="budget-page">
+                <h2>Vamos a empezar:</h2>
+                <p>¿Cuál es tu ingreso mensual?</p>
+                <input type="text" id="income" class="income">
+                <p>Selecciona las categorías de tus gastos recurrentes y el monto que quieres asignarle al mes:</p>
+                <div class="info-budget">
 
-            <h1>Presupuesto</h1>
-            <span id="user-name"></span>
-            <figure>
-                <img src="img/logo-easy-budget.png" alt="logo">
-            </figure>
+                    <div class="expenses-check">
+                        <p><input type="checkbox" name="food" value="Comida"> Comida </p>
+                        <p><input type="checkbox" name="rent" value="Renta"> Renta </p>
+                        <p><input type="checkbox" name="transport" value="Transporte"> Transporte</p>
+                        <p><input type="checkbox" name="bootcamp" value="bootcamp"> Pago Lab</p>
+                        <div><a class="plus-button">+</a><span>Agregar categoría</span></div>
+                    </div>
+                    <div class="expenses-amount">
+                        <input type="text" placeholder="monto" class="input-expenses">
+                        <input type="text" placeholder="monto" class="input-expenses">
+                        <input type="text" placeholder="monto" class="input-expenses">
+                        <input type="text" placeholder="monto" class="input-expenses">
+                    </div>
+                </div>
+                <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+            </div>
+
         </div>
-        <div class="budget-page">
-            <h2>Vamos a empezar:</h2>
-            <p>¿Cuál es tu ingreso mensual?</p>
-            <input type="text" id="income" class="income">
-            <p>Selecciona las categorías de tus gastos recurrentes y el monto que quieres asignarle al mes:</p>
-            <div class="info-budget">
 
-                <div class="expenses-check">
-                    <p><input type="checkbox" name="food" value="Comida"> Comida </p>
-                    <p><input type="checkbox" name="rent" value="Renta"> Renta </p>
-                    <p><input type="checkbox" name="transport" value="Transporte"> Transporte</p>
-                    <p><input type="checkbox" name="bootcamp" value="bootcamp"> Pago Lab</p>
-                    <div><a class="plus-button">+</a><span>Agregar categoría</span></div>
-                </div>
-                <div class="expenses-amount">
-                    <input type="text" placeholder="monto" class="input-expenses">
-                    <input type="text" placeholder="monto" class="input-expenses">
-                    <input type="text" placeholder="monto" class="input-expenses">
-                    <input type="text" placeholder="monto" class="input-expenses">
-                </div>
+    </section>
+
+    <section class="register" id="HomePage">
+        <div class="register-body">
+            <div class="register-title">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <figure>
+                    <img src="img/easy-budget.png" alt="logo">
+                </figure>
             </div>
             <input type="button" value="Aceptar" class="buttons" id="accept-budget">
         </div>
+    </section>
 
-    </div>
 </main>
 
 <body>
