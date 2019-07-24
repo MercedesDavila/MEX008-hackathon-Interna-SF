@@ -27,7 +27,7 @@ figure {
 
 .logo img {
     margin-top: 2rem;
-    height: 90%;
+    height: 85%;
 }
 
 .register-body,
@@ -129,7 +129,7 @@ figure {
 
 .expenses-check span {
     color: gray;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .input-expenses {
@@ -153,6 +153,12 @@ figure {
     border-radius: 100%;
     padding: 2px 8px;
     margin: 0.5rem;
+    cursor: pointer;
+}
+
+.plus-button:hover {
+    background-color: #53BFC1;
+    transform: scale(1.1);
 }
 
 .info-budget {
