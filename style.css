@@ -17,7 +17,77 @@ body {
 
 /* Iniciar Sesión */
 
-.login {}
+.login {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    z-index: 1; */
+}
+
+
+/* #section-login :target {
+    pointer-events: auto;
+} */
+
+.main-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: 90vh;
+    background-color: #F2F2F2;
+    margin: 2rem 1rem;
+    border-radius: 15px;
+}
+
+.cont-logo-login {
+    width: 80%;
+    height: 25%;
+    margin: 10%;
+}
+
+.logo-login {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-log {
+    width: 80%;
+    height: 70%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-login {
+    -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    margin: 0.5rem auto;
+    border-radius: 15px;
+    border: 2px solid #53BFC1;
+    padding: 0.5rem;
+}
+
+.btn-login {
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: #53BFC1;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: fit-content;
+}
 
 
 /* Registro */
@@ -116,5 +186,20 @@ body {
     .info-new-user input {
         width: 20rem;
         font-size: large;
+    }
+    .main-login {
+        max-width: 60%;
+    }
+    .main-login {
+        width: 90%;
+    }
+    .cont-logo-login {
+        width: 25%;
+        height: 15%;
+        margin: 5%;
+    }
+    .cont-log {
+        height: 50%;
+        padding: 10px;
     }
 }
