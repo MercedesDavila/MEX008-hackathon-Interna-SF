@@ -38,6 +38,10 @@ body {
     border-radius: 15px;
 }
 
+.login-body p {
+    margin: 0 auto;
+}
+
 .register-title {
     display: flex;
     align-items: center;
@@ -126,11 +130,12 @@ body {
 #register-button {
     background-color: #53BFC1;
     width: fit-content;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-    .register-body {
+    .register-body,
+    .login-body {
         max-width: 60%;
     }
     .register-title {
