@@ -179,6 +179,10 @@ figure {
     width: 41%;
 }
 
+.hide {
+    display: none;
+}
+
 
 /*Ids*/
 
