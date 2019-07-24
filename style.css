@@ -18,11 +18,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     width: 90%;
     height: 90vh;
     background-color: #F2F2F2;
-    margin: 2rem 1rem;
+    margin: 2rem auto;
     border-radius: 15px;
 }
 
@@ -57,7 +56,8 @@ body {
     padding: 0.5rem;
 }
 
-.info-new-user {
+.info-new-user,
+.budget-page {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,8 @@ body {
     align-items: center;
 }
 
-.info-new-user input {
+.info-new-user input,
+.budget-page input {
     -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
@@ -85,6 +86,22 @@ body {
     font-size: medium;
     font-weight: bold;
 }
+
+.budget-page {
+    width: 80%;
+}
+
+.budget-page p {
+    padding: 0rem 2rem;
+}
+
+
+/* .expenses-check {
+    display: flex;
+} */
+
+
+/*Ids*/
 
 #accept {
     background-color: #53BFC1;
