@@ -112,6 +112,49 @@
             </div>
         </section>
 
+        <section class="register" id="savings">
+            <div class="register-body">
+                <div class="register-title savings">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <h1>Ahorros</h1>
+                    <figure>
+                        <img src="img/easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <div class="savings-body">
+                    <h3>¿De qué sirve ahorrar si no tenemos una meta?</h3>
+                    <p>Ingresa tu meta y cuánto necesitas para cumplirla</p>
+                    <div class="goals-ammount">
+                        <div class="goals">
+                            <input type="text" placeholder="Meta">
+
+                            <input type="text" placeholder="Monto">
+                        </div>
+                        <p>Plazo: <input list="time1" name="time1">
+                            <datalist id="time1">
+                                <option value="1 mes">1 mes</option>
+                                <option value="6 meses">6 meses</option>
+                                <option value="1 año">1 año</option>
+                            </datalist>
+                        </p>
+                        <div class="goals">
+                            <input type="text" placeholder="Meta">
+
+                            <input type="text" placeholder="Monto">
+                        </div>
+                        <p>Plazo: <input list="time2" name="time2">
+                            <datalist id="time2">
+                                <option value="1 mes">1 mes</option>
+                                <option value="6 meses">6 meses</option>
+                                <option value="1 año">1 año</option>
+                            </datalist>
+                        </p>
+                    </div>
+                    <div class="plus"><a class="plus-button">+</a><span>Agregar meta</span></div>
+                    <input type="button" value="Aceptar" class="buttons" id="accept-savings">
+                </div>
+            </div>
+        </section>
 
     </main>
 

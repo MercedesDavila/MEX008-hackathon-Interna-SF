@@ -70,6 +70,10 @@ figure {
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
 }
 
+.savings {
+    background-color: #F2C94C;
+}
+
 .register-title img {
     height: 50px;
     background-color: white;
@@ -123,13 +127,19 @@ figure {
 
 .budget-page p,
 .budget-page h2 {
-    padding: 0rem 2rem;
+    padding: 0rem 0.2rem;
     margin: 0.7rem;
 }
 
-.expenses-check span {
+.expenses-check span,
+.plus span {
     color: gray;
     font-size: 0.9rem;
+}
+
+.savings-body {
+    padding: 1rem;
+    text-align: center;
 }
 
 .input-expenses {
@@ -143,6 +153,22 @@ figure {
     border-radius: 15px;
     border: 2px solid #53BFC1;
     padding: 0.5rem;
+}
+
+.goals-ammount input {
+    justify-content: space-around;
+    width: 7rem;
+    margin: 0.5rem 0.2rem;
+    -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
+    border-radius: 15px;
+    border: 2px solid #F2C94C;
+    padding: 0.5rem;
+}
+
+.goals-ammount p {
+    margin: 0;
 }
 
 .plus-button {
@@ -159,6 +185,11 @@ figure {
 .plus-button:hover {
     background-color: #53BFC1;
     transform: scale(1.1);
+}
+
+.plus {
+    width: 100%;
+    text-align: left;
 }
 
 .info-budget {
@@ -179,6 +210,20 @@ figure {
     width: 41%;
 }
 
+.goals-ammount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.goals {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+}
+
 .hide {
     display: none;
 }
@@ -189,7 +234,8 @@ figure {
 #accept,
 #enter,
 #register-button,
-#accept-budget {
+#accept-budget,
+#accept-savings {
     background-color: #53BFC1;
     width: fit-content;
     margin-top: 1rem;
@@ -200,7 +246,8 @@ figure {
 #accept:hover,
 #enter:hover,
 #register-button:hover,
-#accept-budget:hover {
+#accept-budget:hover,
+#accept-savings:hover {
     background-color: #D81E5B;
     transform: scale(1.1);
 }
@@ -273,5 +320,8 @@ figure {
         margin: 0;
         padding: 0.5rem;
         font-size: 35px;
+    }
+    .goals-ammount input {
+        width: 9rem;
     }
 }
