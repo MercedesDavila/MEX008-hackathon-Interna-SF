@@ -241,10 +241,6 @@ figure {
     margin-left: 50px;
 }
 
-.total-budget {
-    justify-content: space-around;
-}
-
 .savings {
     border: 3px solid #F2C94C;
     -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
@@ -261,7 +257,7 @@ figure {
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     margin: 0.5rem auto;
     border-radius: 15px;
-    border: 3px solid #6FCF97;
+    border: 3px solid red;
     padding: 0.5rem;
 }
 
@@ -269,9 +265,10 @@ figure {
     -webkit-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
-    margin: 0.5rem auto;
+    margin: 0.5rem;
+    margin-right: 5rem;
     border-radius: 15px;
-    border: 3px solid red;
+    border: 3px solid #6FCF97;
     padding: 0.5rem;
 }
 
@@ -286,8 +283,21 @@ figure {
 }
 
 .homepage-body p {
-    padding: 0rem 2rem;
+    padding: 0rem 3rem;
     margin: 0.7rem;
+}
+
+.total-income {
+    margin-right: 10rem;
+}
+
+.total-income p {
+    margin-left: 2rem;
+}
+
+.total-expenses {
+    margin-left: 20rem;
+    margin-top: 1rem;
 }
 
 @media screen and (max-height: 450px) {
