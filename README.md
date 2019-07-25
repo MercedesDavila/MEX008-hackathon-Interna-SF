@@ -9,19 +9,24 @@ Al mismo tiempo, si bien existen muchas aplicaciones que ayudan a los usuarios a
 ## Importancia de la gestión saludable de las finanzas
 
 Unas finanzas saludables se traducen en la adecuada administración de los recursos financieros para lograr determinados objetivos personales.
+
 No llevar una adecuada administración de las finanzas personales puede generar efectos contraproducentes en la salud tales como depresión, pesimismo, baja autoestima, ansiedad, estrés, entre otros.
+
 Llevar una gestión saludable de las finanzas nos ayuda a:
+
 - Darnos cuenta de nuestra situación financiera actual.
 - Determinar nuestras metas y objetivos.
 - Priorizar en qué gastar el dinero.
 - Desarrollar un camino o estrategia que nos lleve a lo que queremos lograr.
 - Evitar deudas.
 - Afrontar gastos imprevistos. 
+
 Además, te permite llevar relaciones sanas con tu pareja o familia. (Wong, 2010).  
 
 La salud financiera fomenta una sociedad más informada, consciente y próspera, opinan los expertos en finanzas.
 
 ## Objetivo
+
 Desarrollar una web-app que facilite a las estudiantes y egresadas de Laboratoria establecer metas de ahorro para lograr su estabilidad e independencia financiera y permita la administración eficaz de sus ingresos y gastos.
 
 ## Planning
@@ -37,17 +42,33 @@ El User Persona siguiente se generó de los datos de las entrevistas realizadas 
 
 ## Inspiraciones en el desarrollo del producto
 
-Como futuras egresadas de Laboratoria y como profesionales en búsqueda de una mejor estabilidad financiera, decidimos crear EasyBudget® que fungirá como herramienta para toda aquella Laboratorian con la necesidad de conocer cuál sería su ingreso necesario para no solo cubrir su presupuesto mensual, sino además, lograr sus metas futuras. 
-Con este objetivo nos inspiramos en todas las mujeres de Laboratoria que quieran sentirse motivadas a lograr sus metas y a llevar unas finanzas sanas. 
-También nos inspiramos en la aplicación MoBills®, aplicación de gastos personales, y en comentarios de nuestras compañeras de qué es lo que les gustaría ver en su aplicación.
+Como futuras egresadas de Laboratoria y como profesionales en búsqueda de la estabilidad e independencia financiera, decidimos crear Easy Budget® que fungirá como herramienta para toda aquella Laboratorian que tenga la necesidad de conocer cuál sería su ingreso para no sólo cubrir su presupuesto mensual, sino además, lograr sus metas financieras futuras. 
+Con este objetivo en mente, nos inspiramos en todas las mujeres de Laboratoria que quieran sentirse motivadas a lograr sus metas, llevar unas finanzas sanas y con ello lograr la independencia financiera. Porque creemos que una mujer financieramente independiente es una mujer con la posibilidad de llevar una vida más plena, con la libertad de crear y ofrecer soluciones, además de promover e inspirar a otras mujeres a seguir sus pasos.
+También tomamos de referente la aplicación MoBills®, aplicación de gastos personales, y los comentarios de nuestras compañeras de qué es lo que les gustaría ver en la app-web.
+
 
 ## Diseño Visual
+
+Para el diseño visual de la app-web primero tomamos en cuenta el diseño first-mobile, considerando que el 64% de los usuarios de dispositivos móviles inteligentes navega en internet de forma activa. (IABMéxico, 2013). Y para hacer más sencilla, rápida y práctica el uso de esta herramienta financiera.
+La paleta de colores se eligió pensando en el atractivo visual de la aplicación sin hacerla pesada a la vista y que los colores inspiraran confianza y tranquilidad. Asimismo, procuramos que la interfaz fuera sencilla e intuitiva, sin saturarla de información para que el usuario se familiarice rápido y sea más sencillo el uso continuo de la aplicación.
+
 
 ## Heurísticas de usabilidad
 
 ## Modelo de negocio
 
+Para que la app-web sea un modelo de negocio viable se implementará publicidad en la versión gratuita, con ello, los anunciantes serían la fuente primaria de ingresos para el negocio. 
+Si el usuario desea eliminar la publicidad tiene la opción de suscribirse a la versión premium, con cargo mensual, semestral o anual a tarjeta bancaria.
+
+
 ## Prototipado
+
+Se hicieron dos prototipos, uno de baja fidelidad y otro de alta fidelidad. El prototipo de baja fidelidad es un bosquejo que se hizo tomando en cuenta los resultados de las entrevistas al usuario objetivo.
+El prototipo de alta fidelidad se hizo después de la primera iteración, realizando ajustes tomando en cuenta los consejos que el usuario objetivo propuso y de observar su interacción con la app-web.
+
+Se hicieron dos prototipos, uno de baja fidelidad y otro de alta fidelidad. El prototipo de baja fidelidad es un bosquejo que se hizo tomando en cuenta los resultados de las entrevistas al usuario objetivo.
+El prototipo de alta fidelidad se hizo después de la primera iteración, realizando ajustes tomando en cuenta los consejos que el usuario objetivo propuso y de observar su interacción con la app-web.
+
 
 ### Prototipo de baja fidelidad
 
