@@ -59,7 +59,7 @@
     </div>
 
     <section class="register" id="budget">
-        <div class="register-body">
+        <div class="budget-body">
             <div class="register-title">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 <h1>Presupuesto</h1>
@@ -97,14 +97,24 @@
     </section>
 
     <section class="register" id="HomePage">
-        <div class="register-body">
+        <div class="homepage-body">
             <div class="register-title">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 <figure>
                     <img src="img/easy-budget.png" alt="logo">
                 </figure>
             </div>
-            <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+            <div class="total-budget">
+                <input type="text" id="total-savings" class="savings">
+                <p class="homepage-p">Ahorros</p>
+                <input type="text" id="total-income" class="income">
+                <p class="homepage-p">Ingresos</p>
+                <input type="text" id="total-expenses" class="expenses">
+                <p class="homepage-p">Gastos</p>
+                <input type="text" id="total-balance" class="balance">
+                <p class="homepage-p">Saldo</p>
+            </div>
+            <div><a class="plus-button">+</a><span>Agregar...</span></div>
         </div>
     </section>
 
