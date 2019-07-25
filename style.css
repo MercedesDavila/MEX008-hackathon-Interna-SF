@@ -225,12 +225,75 @@ figure {
     justify-content: center;
 }
 
+.homepage-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.income-expenses {
+    width: 80%;
+    display: flex;
+}
+
+.income-expenses input {
+    width: 7rem;
+}
+
+.saving-bar {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.money {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .hide {
     display: none;
 }
 
 
 /*Ids*/
+
+#saving-bar {
+    width: 15rem;
+}
+
+#saving-bar[value] {
+    /* Elimino la apariencia por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Quito el borde que aparece en Firefox */
+    border: none;
+    /* Añado mis propios estilos */
+    overflow: hidden;
+    /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+    border: 1px solid #F2C94C;
+    background-color: rgb(241, 230, 195);
+    border-radius: 15px;
+}
+
+#saving-bar::-webkit-progress-value {
+    background: #F2C94C;
+    border-radius: 15px;
+}
+
+#saving-bar::-webkit-progress-bar {
+    background-color: rgb(241, 230, 195);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; */
+    /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius: 15px;
+}
 
 #accept,
 #enter,
@@ -326,7 +389,7 @@ figure {
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     margin: 0.5rem;
-    margin-right: 5rem;
+    margin-right: 2.5rem;
     border-radius: 15px;
     border: 3px solid #6FCF97;
     padding: 0.5rem;
@@ -347,17 +410,22 @@ figure {
     margin: 0.7rem;
 }
 
-.total-income {
-    margin-right: 10rem;
+.money span,
+.saving-bar p {
+    font-size: 0.8rem;
 }
 
 .total-income p {
     margin-left: 2rem;
 }
 
-.total-expenses {
-    margin-left: 20rem;
-    margin-top: 1rem;
+.total-expenses,
+.total-income {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-height: 450px) {
@@ -391,5 +459,8 @@ figure {
     }
     .goals-ammount input {
         width: 9rem;
+    }
+    #saving-bar {
+        width: 20rem;
     }
 }
