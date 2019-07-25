@@ -61,6 +61,8 @@
             <a href="#">Ayuda</a>
             <a href="#">Cerrar sesión</a>
         </div>
+
+
         <section class="register hide" id="budget">
             <div class="register-body">
                 <div class="register-title">
@@ -91,6 +93,7 @@
                             <input type="text" placeholder="monto" class="input-expenses">
                             <input type="text" placeholder="monto" class="input-expenses">
                         </div>
+
                     </div>
                     <input type="button" value="Aceptar" class="buttons" id="accept-budget">
                 </div>
@@ -99,19 +102,35 @@
 
         </section>
 
-
-        <section class="register hide" id="HomePage">
-            <div class="register-body">
-                <div class="register-title">
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-                    <figure>
-                        <img src="img/easy-budget.png" alt="logo">
-                    </figure>
-                </div>
-                <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+       <section class="register" id="HomePage">
+        <div class="homepage-body">
+            <div class="register-title">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <figure>
+                    <img src="img/easy-budget.png" alt="logo">
+                </figure>
             </div>
-        </section>
+            <div class="total-savings">
+                <input type="text" id="total-savings" class="savings">
+                <p class="homepage-p">Ahorros</p>
+            </div>
+            <div class="total-income">
+                <input type="text" id="total-income" class="income">
+                <p class="homepage-p">Ingresos</p>
 
+                <div class="total-expenses">
+                    <input type="text" id="total-expenses" class="expenses">
+                    <p class="homepage-p">Gastos</p>
+                </div>
+            </div>
+            <input type="text" id="total-balance" class="balance">
+            <p class="homepage-p">Saldo</p>
+
+            <div><a class="plus-button">+</a><span>Agregar...</span></div>
+        </div>
+    </section>
+      
+      
         <section class="register" id="savings">
             <div class="register-body">
                 <div class="register-title savings">
@@ -139,7 +158,6 @@
                         </p>
                         <div class="goals">
                             <input type="text" placeholder="Meta">
-
                             <input type="text" placeholder="Monto">
                         </div>
                         <p>Plazo: <input list="time2" name="time2">
@@ -157,8 +175,6 @@
         </section>
 
     </main>
-
-
     <script src="main.js"></script>
 </body>
 
