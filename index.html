@@ -82,20 +82,21 @@
                     <div class="info-budget">
 
                         <div class="expenses-check">
-                            <p><input type="checkbox" name="food" value="Comida"> Comida </p>
-                            <p><input type="checkbox" name="rent" value="Renta"> Renta </p>
-                            <p><input type="checkbox" name="transport" value="Transporte"> Transporte</p>
-                            <p><input type="checkbox" name="bootcamp" value="bootcamp"> Pago Lab</p>
+                            <p><label for="food"><input type="checkbox" id="exp-1" value="Comida"> Comida</label></p>
+                            <p><label for="rent"><input type="checkbox" id="exp-2" value="Renta"> Renta</label></p>
+                            <p><label for="transport"><input type="checkbox" id="exp-3" value="Transporte"> Transporte</label></p>
+                            <p><label for="bootcamp"><input type="checkbox" id="exp-4" value="Bootcamp"> Pago Lab</label></p>
                             <div><a class="plus-button">+</a><span>Agregar categoría</span></div>
                         </div>
                         <div class="expenses-amount">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
+                            <input id="food" type="text" placeholder="monto" class="input-expenses">
+                            <input id="rent" type="text" placeholder="monto" class="input-expenses">
+                            <input id="transport" type="text" placeholder="monto" class="input-expenses">
+                            <input id="bootcamp" type="text" placeholder="monto" class="input-expenses">
                         </div>
 
                     </div>
+                    <p id="root-bud" class="hide">soy el root</p>
                     <input type="button" value="Aceptar" class="buttons" id="accept-budget">
                 </div>
 

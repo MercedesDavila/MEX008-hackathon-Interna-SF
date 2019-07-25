@@ -316,7 +316,8 @@ figure {
     transform: scale(1.1);
 }
 
-#root {
+#root,
+#root-bud {
     font-size: large;
     font-weight: 700;
     color: #D81E5B;
@@ -389,7 +390,7 @@ figure {
     -moz-box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     box-shadow: 9px 2px 17px 1px rgba(58, 51, 53, 0.13);
     margin: 0.5rem;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
     border-radius: 15px;
     border: 3px solid #6FCF97;
     padding: 0.5rem;
