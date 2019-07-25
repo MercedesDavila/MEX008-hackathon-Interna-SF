@@ -20,7 +20,7 @@
                     </figure>
                 </div>
                 <div class="info-user">
-                    <input type="text" name="name" id="name-login" placeholder="Nombre">
+                    <input type="text" name="name" id="name-login" placeholder="Correo">
 
                     <input type="password" name="pass" id="pass-login" placeholder="Contraseña">
 
@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <section class="register" id="register">
+        <section class="register hide" id="register">
             <div class="register-body">
                 <div class="register-title">
                     <h1>Registro</h1>
@@ -43,6 +43,7 @@
                     <input type="text" name="name" id="name" placeholder="Nombre">
                     <input type="text" name="e-mail" id="e-mail" placeholder="Correo electrónico">
                     <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                    <p class="hide" id="root">soy el root</p>
                     <input type="password" name="pass" id="pass2" placeholder="Confirmar contraseña">
                     <input type="button" value="Aceptar" id="accept" class="buttons">
                 </div>
@@ -50,9 +51,11 @@
         </section>
 
 
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Presupuesto</a>
+            <a id="home-a">Inicio</a>
+            <a id="budget-a">Presupuesto</a>
             <a href="#">Ahorros</a>
             <a href="#">Ingresos</a>
             <a href="#">Gastos</a>
@@ -60,8 +63,9 @@
             <a href="#">Cerrar sesión</a>
         </div>
 
-        <section class="register" id="budget">
-            <div class="budget-body">
+
+        <section class="register hide" id="budget">
+            <div class="register-body">
                 <div class="register-title">
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                     <h1>Presupuesto</h1>
@@ -78,23 +82,27 @@
                     <div class="info-budget">
 
                         <div class="expenses-check">
-                            <p><input type="checkbox" name="food" value="Comida"> Comida </p>
-                            <p><input type="checkbox" name="rent" value="Renta"> Renta </p>
-                            <p><input type="checkbox" name="transport" value="Transporte"> Transporte</p>
-                            <p><input type="checkbox" name="bootcamp" value="bootcamp"> Pago Lab</p>
+                            <p><label for="food"><input type="checkbox" id="exp-1" value="Comida"> Comida</label></p>
+                            <p><label for="rent"><input type="checkbox" id="exp-2" value="Renta"> Renta</label></p>
+                            <p><label for="transport"><input type="checkbox" id="exp-3" value="Transporte"> Transporte</label></p>
+                            <p><label for="bootcamp"><input type="checkbox" id="exp-4" value="Bootcamp"> Pago Lab</label></p>
                             <div><a class="plus-button">+</a><span>Agregar categoría</span></div>
                         </div>
                         <div class="expenses-amount">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
-                            <input type="text" placeholder="monto" class="input-expenses">
+                            <input id="food" type="text" placeholder="monto" class="input-expenses">
+                            <input id="rent" type="text" placeholder="monto" class="input-expenses">
+                            <input id="transport" type="text" placeholder="monto" class="input-expenses">
+                            <input id="bootcamp" type="text" placeholder="monto" class="input-expenses">
                         </div>
+
                     </div>
+                    <p id="root-bud" class="hide">soy el root</p>
                     <input type="button" value="Aceptar" class="buttons" id="accept-budget">
                 </div>
 
             </div>
+        </section>
+
 
         </section>
 
@@ -147,8 +155,54 @@
             </div>
             </div>
         </section>
+
+
+        <section class="register" id="savings">
+            <div class="register-body">
+                <div class="register-title savings">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <h1>Ahorros</h1>
+                    <figure>
+                        <img src="img/easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <div class="savings-body">
+                    <h3>¿De qué sirve ahorrar si no tenemos una meta?</h3>
+                    <p>Ingresa tu meta y cuánto necesitas para cumplirla</p>
+                    <div class="goals-ammount">
+                        <div class="goals">
+                            <input id="goal-1" type="text" placeholder="Meta">
+
+                            <input id="amount-1" type="text" placeholder="Monto">
+                        </div>
+                        <p>Plazo: <input id="time-1" list="time1" name="time1">
+                            <datalist id="time1">
+                                <option value="1 mes">1 mes</option>
+                                <option value="6 meses">6 meses</option>
+                                <option value="1 año">1 año</option>
+                            </datalist>
+                        </p>
+                        <div class="goals">
+                            <input id="goal-2" type="text" placeholder="Meta">
+                            <input id="amount-2" type="text" placeholder="Monto">
+                        </div>
+                        <p>Plazo: <input id="time-2" list="time2" name="time2">
+                            <datalist id="time2">
+                                <option value="1 mes">1 mes</option>
+                                <option value="6 meses">6 meses</option>
+                                <option value="1 año">1 año</option>
+                            </datalist>
+                        </p>
+                    </div>
+                    <div class="plus"><a class="plus-button">+</a><span>Agregar meta</span></div>
+                    <p id="root-savings" class="hide">soy el root</p>
+                    <input type="button" value="Aceptar" class="buttons" id="accept-savings">
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script src="main.js "></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

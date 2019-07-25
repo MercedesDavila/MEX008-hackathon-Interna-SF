@@ -1,96 +1,117 @@
-# "Hackathon" de final de _Common Core_, Salud Financiera
+# EASY BUDGET
 
-## Índice
-
-- [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
-
----
 
 ## Preámbulo
 
 Con la revolución de las fintech (“fin” finanzas, “tech” tecnología) se han desarrollado multitud de aplicaciones que han llegado para quedarse. La comodidad, la rapidez y su fácil uso son los atributos principales que hace de ellas un complemento fundamental para las operaciones financieras del día a día.
 
-Para llevar una mejor gestión de las operaciones financieras, con la disrupción de la tecnología, se han creado diferentes aplicaciones fintech que te permiten realizar, controlar y planificar las diferentes actividades financieras que las personas desarrollan en su vida. 
+Para llevar una mejor gestión de las operaciones financieras, con la disrupción de la tecnología, se han creado diferentes aplicaciones fintech que te permiten realizar, controlar y planificar las diferentes actividades financieras que las personas desarrollan en su vida.
 
 Al mismo tiempo, si bien existen muchas aplicaciones que ayudan a los usuarios a crear un Presupuesto mensual, existe todavía un hueco. No hay aplicaciones que ayuden y eduquen a las personas a planificar sus ingresos, gastos y ahorros con miras a un futuro tanto de corto como de mediano plazo, y para visualizar la mejor estabilidad financiera que podrá tener en su vida.
 
+## Importancia de la gestión saludable de las finanzas
 
-![Ahorrar](https://media.giphy.com/media/l41YhVfr4kOzSBSMM/giphy.gif)
+Unas finanzas saludables se traducen en la adecuada administración de los recursos financieros para lograr determinados objetivos personales.
 
-## Resumen del proyecto
+No llevar una adecuada administración de las finanzas personales puede generar efectos contraproducentes en la salud tales como depresión, pesimismo, baja autoestima, ansiedad, estrés, entre otros.
 
-Durante estos tres días crearás un producto que resuelve el problema de muchas de las estudiantes del Bootcamp de Laboratoria.
+Llevar una gestión saludable de las finanzas nos ayuda a:
 
-Las estudiantes de Laboratoria sueñan con lograr su estabilidad y/o independencia financiera. Se podrá lograr con el tiempo con su nuevo sueldo como programadora o diseñadora de experiencia.  Pero, más allá de esperar un buen salario, pocas se han sentado a planificar cómo lograr sus metas financieras y proyectar cuándo lograrlas. 
+- Darnos cuenta de nuestra situación financiera actual.
+- Determinar nuestras metas y objetivos.
+- Priorizar en qué gastar el dinero.
+- Desarrollar un camino o estrategia que nos lleve a lo que queremos lograr.
+- Evitar deudas.
+- Afrontar gastos imprevistos. 
 
-Al recibir una oferta de trabajo, las estudiantes/egresadas no tienen un producto que les guíe a saber lo que les quedará libre del salario ofrecido, ni tienen un producto que les guíe a planificar cómo usar ese dinero “libre” para ir construyendo su ruta hacia la independencia financiera.
+Además, te permite llevar relaciones sanas con tu pareja o familia. (Wong, 2010).  
+
+La salud financiera fomenta una sociedad más informada, consciente y próspera, opinan los expertos en finanzas.
+
+## Objetivo
+
+Desarrollar una web-app que facilite a las estudiantes y egresadas de Laboratoria establecer metas de ahorro para lograr su estabilidad e independencia financiera y permita la administración eficaz de sus ingresos y gastos.
+
+## Planning
+
+### Instrumento de Investigación
+
+El instrumento de investigación empleado fue una entrevista realizada en persona a cinco de nuestras compañeras.
+
+### User Persona
+
+El User Persona siguiente se generó de los datos de las entrevistas realizadas a nuestras compañeras:
+
+![User Persona](img/UserPersona.png)
+
+## Inspiraciones en el desarrollo del producto
+
+Como futuras egresadas de Laboratoria y como profesionales en búsqueda de la estabilidad e independencia financiera, decidimos crear Easy Budget® que fungirá como herramienta para toda aquella Laboratorian que tenga la necesidad de conocer cuál sería su ingreso para no sólo cubrir su presupuesto mensual, sino además, lograr sus metas financieras futuras. 
+
+Con este objetivo en mente, nos inspiramos en todas las mujeres de Laboratoria que quieran sentirse motivadas a lograr sus metas, llevar unas finanzas sanas y con ello lograr la independencia financiera. Porque creemos que una mujer financieramente independiente es una mujer con la posibilidad de llevar una vida más plena, con la libertad de crear y ofrecer soluciones, además de promover e inspirar a otras mujeres a seguir sus pasos.
+
+También tomamos de referente la aplicación MoBills®, aplicación de gastos personales, y los comentarios de nuestras compañeras de qué es lo que les gustaría ver en la app-web.
 
 
-## Consideraciones generales
+## Diseño Visual
 
-- Este proyecto se debe resolver en equipos de hasta 4 personas.
-- Tiempo para completar el reto: 3 días.
-- Habrá dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
-- Esta aplicación/web app que crearás va dirigido a estudiantes actuales de Laboratoria, pero podría ser usado también por egresadas de Laboratoria.
+Para el diseño visual de la app-web primero tomamos en cuenta el diseño first-mobile, considerando que el 64% de los usuarios de dispositivos móviles inteligentes navega en internet de forma activa. (IABMéxico, 2013). Y para hacer más sencilla, rápida y práctica el uso de esta herramienta financiera.
 
-## Objetivos de aprendizaje
+El logotipo se realizó y eligió mediante consenso pensando en el significado de la imagen y la relación que tiene con el principal objetivo de la app-web: ahorrar. 
 
-- Enfrentarte a un reto de corta duración en el que pongas
-  en práctica todo lo aprendido hasta ahora.
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
-- Que tú aprendas a planificar qué salario aceptar y cómo usar mejor ese dinero.
+![Logotipo](img/easy-budget.png)
 
-## Parte Obligatoria
+Se eligió el nombre de “Easy Budget”, en español “presupuesto fácil”, porque es parte del objetivo principal que es facilitar llevar un presupuesto, además de que fonéticamente es fácil de recordar.
 
-- ## Consideraciones técnicas
+La paleta de colores se seleccionó pensando en el atractivo visual de la app-web sin hacerla pesada a la vista y que los colores inspiraran confianza y tranquilidad. Asimismo, procuramos que la interfaz fuera sencilla e intuitiva, sin saturarla de información para que el usuario se familiarice rápido y sea más sencillo el uso continuo de la app-web.
 
-	- #### UX
-		- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-		por _squad_ en el que se presente el _planning_
-		y las inspiraciones utilizadas para definir el producto. 
-		Además:
-		- El diseño visual de los componentes es de libre elección.
-		- Agregar en el readme análisis de heurísticas de usabilidad.
-		- Modelo de negocio.
-		- Agregar en el readme sketch y/o prototipo (alta fidelidad , baja fidelidad o navegable.)
-		- Agregar en el archivo _readme_, qué hizo cada una en el proyecto.
-		- Documentar la importancia de la gestion saludable de la finanzas.
+![Paleta de colores](img/PaletaDeColores.png)
 
-	- #### FE
-		- Tú y tu equipo construirán una web app que solucione una problemática.
-		- El producto deberá presentarse publicado en github pages o en alguna plataforma de _hosting_ ( [now](https://zeit.co/now), [firebase hosting](https://firebase.google.com/products/hosting/)).
-		- En este proyecto debe haber persistencia de los datos. Con lo anterior nos referimos a que si la usuaria ingresó  un dato, que ese dato se pueda visualizar aunque recargues la página.
-		- Pueden usar algún framework de CSS si así lo deciden.
-	
-## Historias de Usuario.
-A continuación te dejamos unas historias de usuario que te podrán servir como guía en la construcción de tu web app.
 
-- Yo como estudiante de Laboratoria que acabo de recibir una oferta de trabajo quiero poder realizar un presupuesto de mis gastos futuros y poder ahorrar un 10% de mi salario.
-- Yo como egresada de Laboratoria que me encuentro trabajando quiero poder realizar un presupuesto de mis gastos actuales, para en un futuro poder independizarme.
-- Yo como estudiante de Laboratoria quiero poder realizar un presupuesto de los próximos 6 meses para poder sobrellevar los gastos que realizaré durante el bootcamp.
+## Historias de Usuarios
 
-Siéntete libre de agregar las historias de usuario que requieras.
+![HistoriaDeUsuario1](img/HistoriaDeUsuario1.png)
 
-## Sobre las presentaciones
 
-- Habrá 2 presentaciones:
-	- Primer presentación será el día 24 de julio a partir de la 13:30.
-	- Segunda presentación será el día 25 de julio a partir de las 15:00.
-- Cada squad tendrá 3 minutos para presentar y 2 minutos para preguntas.
-- Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
-- Solo podran presentar si cuentan con la liga de su proyecto, no podrán utilizar su propia computadora.
 
-## Recursos
+![HistoriaDeUsuario2](img/HistoriaDeUsuario2.png)
 
-- En el siguiente [Link](https://drive.google.com/drive/folders/1lnwTDlIavnUCHbAfFXS2jPNQKDlCAhRM?usp=sharing) podrás encontrar recursos para resolver el reto.
-- En el siguiente [link](https://www.nngroup.com/articles/persona/) podrás encontrar informacion para poder desarrollar el user persona. Te dejamos un ejemplo de [user persona](http://www.businessdesigntools.com/portfolio-items/persona-canvas/).
-- Te dejamos algunos links en donde puedes consultar framework de CSS ([Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [foundations](https://foundation.zurb.com/) y un recurso en donde podrás ver otras opciones de [framework](https://scotch.io/bar-talk/6-popular-css-frameworks-to-use-in-2019)).
-- Para la persistencia de datos puedes investigar sobre [storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage)
 
+## Heurísticas de usabilidad
+
+## Modelo de negocio
+
+Para que la app-web sea un modelo de negocio viable se implementará publicidad en la versión gratuita, con ello, los anunciantes serían la fuente primaria de ingresos para el negocio. 
+
+Si el usuario desea eliminar la publicidad tiene la opción de suscribirse a la versión premium, con cargo mensual, semestral o anual a tarjeta bancaria.
+
+
+## Prototipado
+
+Se hicieron dos prototipos, uno de baja fidelidad y otro de alta fidelidad. El prototipo de baja fidelidad es un bosquejo que se hizo tomando en cuenta los resultados de las entrevistas al usuario objetivo.
+
+El prototipo de alta fidelidad se hizo después de la primera iteración, realizando ajustes tomando en cuenta los consejos que el usuario objetivo propuso y de observar su interacción con la app-web.
+
+
+### Prototipo de baja fidelidad
+
+![PrototipoDeBajaFidelidad](img/PrototipoBajaFidelidad.png)
+
+### Prototipo de alta fidelidad
+
+![PrototipoDeAltaFidelidad](img/PrototipoAltaFidelidad.png)
+
+## Necesidades técnicas
+
+Este proyecto se realizó con HTML, JavaScript y CSS.
+
+## ¿Cómo ejecutar este proyecto?
+
+Solo necesitas un navegador y dar click en el siguiente link: https://iselareyesperdomo94.github.io/MEX008-hackathon-Interna-SF/
+
+
+## Bibliografía
+
+Jaime G. Wong, (10 de enero 2010).  “Ocho motivos por qué aprender a administrar tu dinero.” Sueños de Azul. Recuperado de: http://jgwong.org/blog/2007/01/10/ocho-motivos-por-que-aprender-a-administrar-tu-dinero/
+
+IABMéxico. 26 de noviembre 2013. “Estudio de usos y hábitos de dispositivos móviles en México 2013”.  IAB México. Recuperado de: https://www.iabmexico.com/estudios/usos-habitos-dispositivos-moviles-2013/
