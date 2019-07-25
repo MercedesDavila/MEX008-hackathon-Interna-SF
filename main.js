@@ -13,6 +13,9 @@ const registerButton = document.getElementById('register-button');
 const budgetA = document.getElementById('budget-a');
 const homeA = document.getElementById('home-a');
 const nameLogin = document.getElementById('name-login');
+const submitInfoNewUser = document.getElementById('accept');
+const submitInfoBudget = document.getElementById('accept-budget');
+const submitInfoSavings = document.getElementById('accept-savings');
 
 //function open or close sections
 const showSection = id => document.getElementById(id).classList.remove('hide');
@@ -29,12 +32,15 @@ const goingHome = () => {
     hideSection('login');
     hideSection('register');
     hideSection('budget');
-    showSection('HomePage')
+    hideSection('savings')
+    showSection('HomePage');
 }
 
 const goingRegister = () => {
     hideSection('login');
-    showSection('register')
+    hideSection('HomePage');
+    hideSection('savings');
+    showSection('register');
 }
 
 const goingBudget = () => {
@@ -44,6 +50,11 @@ const goingBudget = () => {
     showSection('budget');
 }
 
+const goingSavings = () => {
+    hideSection('budget');
+    showSection('savings');
+}
+
 
 //events
 enterHome.addEventListener('click', goingHome);
@@ -51,3 +62,6 @@ enterHome.addEventListener('click', goingHome);
 registerButton.addEventListener('click', goingRegister);
 budgetA.addEventListener('click', goingBudget);
 homeA.addEventListener('click', goingHome);
+submitInfoNewUser.addEventListener('click', goingBudget);
+submitInfoBudget.addEventListener('click', goingSavings);
+submitInfoSavings.addEventListener('click', goingHome);
