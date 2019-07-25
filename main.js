@@ -13,6 +13,20 @@ const registerButton = document.getElementById('register-button');
 const budgetA = document.getElementById('budget-a');
 const homeA = document.getElementById('home-a');
 const nameLogin = document.getElementById('name-login');
+const submitInfoNewUser = document.getElementById('accept');
+const submitInfoBudget = document.getElementById('accept-budget');
+const submitInfoSavings = document.getElementById('accept-savings');
+
+
+// declaring global variables to save user data
+// Register Section Data: Capturing Data
+let nameRegister = document.getElementById('name');
+let mailRegister = document.getElementById('e-mail');
+let passRegister = document.getElementById('pass');
+let pass2Register = document.getElementById('pass2');
+let root = document.getElementById('root');
+
+
 
 //function open or close sections
 const showSection = id => document.getElementById(id).classList.remove('hide');
@@ -25,16 +39,20 @@ const savingName = () => {
     // print name
 
 //functions to change sections
+
 const goingHome = () => {
     hideSection('login');
     hideSection('register');
     hideSection('budget');
-    showSection('HomePage')
+    hideSection('savings')
+    showSection('HomePage');
 }
 
 const goingRegister = () => {
     hideSection('login');
-    showSection('register')
+    hideSection('HomePage');
+    hideSection('savings');
+    showSection('register');
 }
 
 const goingBudget = () => {
@@ -44,6 +62,11 @@ const goingBudget = () => {
     showSection('budget');
 }
 
+const goingSavings = () => {
+    hideSection('budget');
+    showSection('savings');
+}
+
 
 //events
 enterHome.addEventListener('click', goingHome);
@@ -51,3 +74,40 @@ enterHome.addEventListener('click', goingHome);
 registerButton.addEventListener('click', goingRegister);
 budgetA.addEventListener('click', goingBudget);
 homeA.addEventListener('click', goingHome);
+// submitInfoNewUser.addEventListener('click', goingBudget);
+submitInfoBudget.addEventListener('click', goingSavings);
+
+// functions to save data user//
+let saveInfoNewUser = () => {
+    //Data capture written in the inputs
+    nameRegister = document.getElementById('name').value;
+    mailRegister = document.getElementById('e-mail').value;
+    passRegister = document.getElementById('pass').value;
+    pass2Register = document.getElementById('pass2').value;
+
+    if (passRegister === pass2Register) {
+        //saving data in localstorage
+        localStorage.setItem('usuario', nameRegister);
+        localStorage.setItem('mail', mailRegister);
+        localStorage.setItem('contraseña', passRegister);
+        localStorage.setItem('verificar-contraseña', pass2Register);
+        //clearinputs
+        document.getElementById('name').value = '';
+        document.getElementById('e-mail').value = '';
+        document.getElementById('pass').value = '';
+        document.getElementById('pass2').value = '';
+        goingBudget();
+    } else {
+        root.classList.remove('hide');
+        root.innerHTML = 'Las contraseñas no coinciden'
+
+    }
+
+
+    // console.log(usuario, mail, contraseña, verificar - contraseña);
+}
+
+
+
+// events to save data user
+submitInfoNewUser.addEventListener('click', saveInfoNewUser);
