@@ -9,125 +9,113 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>EasyBudget</title>
 </head>
-<<<<<<< HEAD
-<section id="section-login" class="login">
-    <main class="main-login">
-        <header class="cont-logo-login">
-            <img class="logo-login" src="img\easy-budget.png" alt="Logo Easy Budget">
-        </header>
-        <main class="cont-log">
-            <input class="info-login" type="text" placeholder="Usuario">
-            <input class="info-login" placeholder="Ingresar">
-            <a class="btn-login" href="#">Olvidaste tu contraseña?</a>
-            <a class="btn-login" href="#register">Registrarse</a>
-        </main>
-
-    </main>
-</section>
-<section class="register" id="register">
-    <div class="register-body">
-        <div class="register-title">
-            <h1>Registro</h1>
-            <figure>
-                <img src="img/logo-easy-budget.png" alt="logo">
-            </figure>
-        </div>
-        <div class="info-new-user">
-            <input type="text" name="name" id="name" placeholder="Nombre">
-            <input type="text" name="e-mail" id="e-mail" placeholder="Correo electrónico">
-            <input type="password" name="pass" id="pass" placeholder="Contraseña">
-            <input type="password" name="pass" id="pass2" placeholder="Confirmar contraseña">
-            <input type="button" value="Aceptar" id="accept" class="buttons">
-=======
-<main>
-
-
-    <section class="register hide" id="register">
-        <div class="register-body">
-            <div class="register-title">
-                <h1>Registro</h1>
-                <figure>
-                    <img src="img/logo-easy-budget.png" alt="logo">
-                </figure>
-            </div>
-            <div class="info-new-user">
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <input type="text" name="e-mail" id="e-mail" placeholder="Correo electrónico">
-                <input type="password" name="pass" id="pass" placeholder="Contraseña">
-                <input type="password" name="pass" id="pass2" placeholder="Confirmar contraseña">
-                <input type="button" value="Aceptar" id="accept" class="buttons">
-            </div>
->>>>>>> ab782910a4813bd019e22d3521a2834ac4b434fb
-        </div>
-    </section>
-
-
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a id="home-a">Inicio</a>
-        <a id="budget-a">Presupuesto</a>
-        <a href="#">Ahorros</a>
-        <a href="#">Ingresos</a>
-        <a href="#">Gastos</a>
-        <a href="#">Ayuda</a>
-        <a href="#">Cerrar sesión</a>
-    </div>
-<<<<<<< HEAD
-</section>
-<section id="section-welcome" class="welcome">
-    <main class="main-budget">
-        <header class="header-budget">
-            <p>¡Bienvenida!</p>
-            <figure><img src="img/logo-easy-budget.png" alt="Logo Easy Budget"></figure>
-        </header>
-        <main class="initial-budget">
-            <section class="global-budget">
-                <p>Vamos a empezar:</p>
-                <p>¿Cuál es tu ingreso mensual?</p>
-                <input type="text" placeholder="Ingresa monto con decimales">
-            </section>
-            <section class="instructions">
-                <p>Selecciona las categorías de tus gastos recurrentes y el monto que quieres asignarle al mes</p>
-                <figure><img src="img/plus.png" alt="Agregar Categoría"></figure>
-            </section>
-            <section class="budget'categories">
-                <input type="checkbox" id="c1" checked>
-                <label for="c1"><input class="cat" type="text" placeholder="Comida"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
-                <input type="checkbox" id="c1" checked>
-                <label for="c1"><input class="cat" type="text" placeholder="Renta"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
-                <input type="checkbox" id="c1" checked>
-                <label for="c1"><input class="cat" type="text" placeholder="Transporte"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
-                <input type="checkbox" id="c1" checked>
-                <label for="c1"><input class="cat" type="text" placeholder="Pago Bootcamp"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
-                <input type="checkbox" id="c1" checked>
-                <label for="c1"><input class="cat" type="text" placeholder="Entretenimiento"> <input class="amount" type="text" placeholder="Ingresa monto con decimales"></label>
-                <a class="btn-init-bad" href="#">Aceptar</a>
-            </section>
-        </main>
-    </main>
-</section>
-=======
-
-
-
-    <section class="register hide" id="HomePage">
-        <div class="register-body">
-            <div class="register-title">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-                <figure>
-                    <img src="img/easy-budget.png" alt="logo">
-                </figure>
-            </div>
-            <input type="button" value="Aceptar" class="buttons" id="accept-budget">
-        </div>
-    </section>
-
-
-</main>
->>>>>>> ab782910a4813bd019e22d3521a2834ac4b434fb
 
 <body>
+    <main>
+        <section class="login" id="login">
+            <div class="login-body">
+                <div class="logo">
+                    <figure>
+                        <img src="img/easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <div class="info-user">
+                    <input type="text" name="name" id="name-login" placeholder="Nombre">
+
+                    <input type="password" name="pass" id="pass-login" placeholder="Contraseña">
+
+                    <input type="button" value="Ingresar" id="enter" class="buttons">
+                    <p>¿Olvidaste tu contraseña?</p>
+                    <input type="button" value="Registro" id="register-button" class="buttons">
+                </div>
+            </div>
+        </section>
+
+        <section class="register hide" id="register">
+            <div class="register-body">
+                <div class="register-title">
+                    <h1>Registro</h1>
+                    <figure>
+                        <img src="img/logo-easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <div class="info-new-user">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Correo electrónico">
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                    <input type="password" name="pass" id="pass2" placeholder="Confirmar contraseña">
+                    <input type="button" value="Aceptar" id="accept" class="buttons">
+                </div>
+            </div>
+        </section>
+
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="home-a">Inicio</a>
+            <a id="budget-a">Presupuesto</a>
+            <a href="#">Ahorros</a>
+            <a href="#">Ingresos</a>
+            <a href="#">Gastos</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Cerrar sesión</a>
+        </div>
+        <section class="register hide" id="budget">
+            <div class="register-body">
+                <div class="register-title">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <h1>Presupuesto</h1>
+                    <span id="user-name"></span>
+                    <figure>
+                        <img src="img/logo-easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <div class="budget-page">
+                    <h2>Vamos a empezar:</h2>
+                    <p>¿Cuál es tu ingreso mensual?</p>
+                    <input type="text" id="income" class="income">
+                    <p>Selecciona las categorías de tus gastos recurrentes y el monto que quieres asignarle al mes:</p>
+                    <div class="info-budget">
+
+                        <div class="expenses-check">
+                            <p><input type="checkbox" name="food" value="Comida"> Comida </p>
+                            <p><input type="checkbox" name="rent" value="Renta"> Renta </p>
+                            <p><input type="checkbox" name="transport" value="Transporte"> Transporte</p>
+                            <p><input type="checkbox" name="bootcamp" value="bootcamp"> Pago Lab</p>
+                            <div><a class="plus-button">+</a><span>Agregar categoría</span></div>
+                        </div>
+                        <div class="expenses-amount">
+                            <input type="text" placeholder="monto" class="input-expenses">
+                            <input type="text" placeholder="monto" class="input-expenses">
+                            <input type="text" placeholder="monto" class="input-expenses">
+                            <input type="text" placeholder="monto" class="input-expenses">
+                        </div>
+                    </div>
+                    <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="register hide" id="HomePage">
+            <div class="register-body">
+                <div class="register-title">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <figure>
+                        <img src="img/easy-budget.png" alt="logo">
+                    </figure>
+                </div>
+                <input type="button" value="Aceptar" class="buttons" id="accept-budget">
+            </div>
+        </section>
+
+
+    </main>
+
+
     <script src="main.js"></script>
 </body>
 
