@@ -161,11 +161,11 @@
                     <p>Ingresa tu meta y cuánto necesitas para cumplirla</p>
                     <div class="goals-ammount">
                         <div class="goals">
-                            <input type="text" placeholder="Meta">
+                            <input id="goal-1" type="text" placeholder="Meta">
 
-                            <input type="text" placeholder="Monto">
+                            <input id="amount-1" type="text" placeholder="Monto">
                         </div>
-                        <p>Plazo: <input list="time1" name="time1">
+                        <p>Plazo: <input id="time-1" list="time1" name="time1">
                             <datalist id="time1">
                                 <option value="1 mes">1 mes</option>
                                 <option value="6 meses">6 meses</option>
@@ -173,10 +173,10 @@
                             </datalist>
                         </p>
                         <div class="goals">
-                            <input type="text" placeholder="Meta">
-                            <input type="text" placeholder="Monto">
+                            <input id="goal-2" type="text" placeholder="Meta">
+                            <input id="amount-2" type="text" placeholder="Monto">
                         </div>
-                        <p>Plazo: <input list="time2" name="time2">
+                        <p>Plazo: <input id="time-2" list="time2" name="time2">
                             <datalist id="time2">
                                 <option value="1 mes">1 mes</option>
                                 <option value="6 meses">6 meses</option>
@@ -185,6 +185,7 @@
                         </p>
                     </div>
                     <div class="plus"><a class="plus-button">+</a><span>Agregar meta</span></div>
+                    <p id="root-savings" class="hide">soy el root</p>
                     <input type="button" value="Aceptar" class="buttons" id="accept-savings">
                 </div>
             </div>

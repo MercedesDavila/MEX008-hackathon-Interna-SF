@@ -317,7 +317,8 @@ figure {
 }
 
 #root,
-#root-bud {
+#root-bud,
+#root-savings {
     font-size: large;
     font-weight: 700;
     color: #D81E5B;

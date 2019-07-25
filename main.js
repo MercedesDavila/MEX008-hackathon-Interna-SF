@@ -18,6 +18,7 @@ const submitInfoBudget = document.getElementById('accept-budget');
 const submitInfoSavings = document.getElementById('accept-savings');
 
 
+
 // declaring global variables to save user data
 // Register Section Data: Capturing Data
 let nameRegister = document.getElementById('name');
@@ -25,6 +26,7 @@ let mailRegister = document.getElementById('e-mail');
 let passRegister = document.getElementById('pass');
 let pass2Register = document.getElementById('pass2');
 let root = document.getElementById('root');
+
 //Budget Section Data: Capturing Data
 let monthlyIncome = document.getElementById('income');
 let foodBudget = document.getElementById('food');
@@ -32,6 +34,15 @@ let rentBudget = document.getElementById('rent');
 let transportBudget = document.getElementById('transport');
 let bootCampBudget = document.getElementById('bootcamp');
 let rootBudget = document.getElementById('root-bud');
+
+//Savings Section Data: Capturing Data
+let goal1 = document.getElementById('goal-1');
+let amount1 = document.getElementById('amount-1');
+let time1 = document.getElementById('time-1');
+let goal2 = document.getElementById('goal-2');
+let amount2 = document.getElementById('amount-2');
+let time2 = document.getElementById('time-2');
+let rootSavings = document.getElementById('root-savings')
 
 
 
@@ -71,6 +82,9 @@ const goingBudget = () => {
 
 const goingSavings = () => {
     hideSection('budget');
+    hideSection('register');
+    hideSection('HomePage');
+    hideSection('login');
     showSection('savings');
 }
 
@@ -81,7 +95,7 @@ enterHome.addEventListener('click', goingHome);
 registerButton.addEventListener('click', goingRegister);
 budgetA.addEventListener('click', goingBudget);
 homeA.addEventListener('click', goingHome);
-// submitInfoBudget.addEventListener('click', goingSavings);
+
 
 // functions to save data user//
 //Save RegisterData
@@ -112,6 +126,7 @@ let saveInfoNewUser = () => {
 
 }
 
+//Save BudgetData
 let saveBudgetInfo = () => {
     monthlyIncome = document.getElementById('income').value;
     foodBudget = document.getElementById('food').value;
@@ -133,9 +148,34 @@ let saveBudgetInfo = () => {
 
 }
 
+//Save SavingsData
+let saveSavingsInfo = () => {
+        goal1 = document.getElementById('goal-1').value;
+        amount1 = document.getElementById('amount-1').value;
+        time1 = document.getElementById('time-1').value;
+        goal2 = document.getElementById('goal-2').value;
+        amount2 = document.getElementById('amount-2').value;
+        time2 = document.getElementById('time-2').value;
+        if (goal1, amount1, time1 == '') {
+            rootSavings.classList.remove('hide');
+            rootSavings.innerHTML = 'Por favor ingresa una meta.'
+        } else {
+            localStorage.setItem('Meta1', goal1);
+            localStorage.setItem('Monto1', amount1);
+            localStorage.setItem('Plazo1', time1);
+            localStorage.setItem('Meta2', goal2);
+            localStorage.setItem('Monto2', amount2);
+            localStorage.setItem('Plazo2', time2);
+            goingHome();
+        }
 
-
-
-// events to save data user
+    }
+    // events to save data user
 submitInfoNewUser.addEventListener('click', saveInfoNewUser);
 submitInfoBudget.addEventListener('click', saveBudgetInfo);
+submitInfoSavings.addEventListener('click', saveSavingsInfo)
+
+
+
+// Functions to get data user//
+//Get LoginData
