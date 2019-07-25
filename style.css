@@ -230,6 +230,7 @@ figure {
     color: #FFFFFF;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sidenav a:hover {
