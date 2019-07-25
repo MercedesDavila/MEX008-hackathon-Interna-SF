@@ -111,22 +111,36 @@
                         <img src="img/easy-budget.png" alt="logo">
                     </figure>
                 </div>
-                <div class="total-savings">
-                    <input type="text" id="total-savings" class="savings">
-                    <p class="homepage-p">Ahorros</p>
-                </div>
-                <div class="total-income">
-                    <input type="text" id="total-income" class="income">
-                    <p class="homepage-p">Ingresos</p>
-
-                    <div class="total-expenses">
-                        <input type="text" id="total-expenses" class="expenses">
-                        <p class="homepage-p">Gastos</p>
+                <div class="homepage-info">
+                    <div class="total-savings">
+                        <input type="text" id="total-savings" class="savings">
+                        <p class="homepage-p">Ahorros</p>
                     </div>
-                </div>
-                <input type="text" id="total-balance" class="balance">
-                <p class="homepage-p">Saldo</p>
+                    <div class="income-expenses">
+                        <div class="total-income">
+                            <input type="text" id="total-income" class="income">
+                            <p class="homepage-p">Ingresos</p>
+                        </div>
+                        <div class="total-expenses">
+                            <input type="text" id="total-expenses" class="expenses">
+                            <p class="homepage-p">Gastos</p>
+                        </div>
+                    </div>
+                    <div class="balance-total">
+                        <input type="text" id="total-balance" class="balance">
+                        <p class="homepage-p">Saldo</p>
+                    </div>
 
+                </div>
+
+
+                <div class="saving-bar">
+                    <div class="money">
+                        <span>$200.00</span><span>$2000.00</span>
+                    </div>
+                    <progress id="saving-bar" max="100" value="10"></progress>
+                    <p>Estas a <span></span> de lograr tu meta</p>
+                </div>
                 <div><a class="plus-button">+</a><span>Agregar...</span></div>
             </div>
         </section>
