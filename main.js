@@ -25,6 +25,13 @@ let mailRegister = document.getElementById('e-mail');
 let passRegister = document.getElementById('pass');
 let pass2Register = document.getElementById('pass2');
 let root = document.getElementById('root');
+//Budget Section Data: Capturing Data
+let monthlyIncome = document.getElementById('income');
+let foodBudget = document.getElementById('food');
+let rentBudget = document.getElementById('rent');
+let transportBudget = document.getElementById('transport');
+let bootCampBudget = document.getElementById('bootcamp');
+let rootBudget = document.getElementById('root-bud');
 
 
 
@@ -74,10 +81,10 @@ enterHome.addEventListener('click', goingHome);
 registerButton.addEventListener('click', goingRegister);
 budgetA.addEventListener('click', goingBudget);
 homeA.addEventListener('click', goingHome);
-// submitInfoNewUser.addEventListener('click', goingBudget);
-submitInfoBudget.addEventListener('click', goingSavings);
+// submitInfoBudget.addEventListener('click', goingSavings);
 
 // functions to save data user//
+//Save RegisterData
 let saveInfoNewUser = () => {
     //Data capture written in the inputs
     nameRegister = document.getElementById('name').value;
@@ -103,11 +110,32 @@ let saveInfoNewUser = () => {
 
     }
 
-
-    // console.log(usuario, mail, contraseña, verificar - contraseña);
 }
+
+let saveBudgetInfo = () => {
+    monthlyIncome = document.getElementById('income').value;
+    foodBudget = document.getElementById('food').value;
+    rentBudget = document.getElementById('rent').value;
+    transportBudget = document.getElementById('transport').value;
+    bootCampBudget = document.getElementById('bootcamp').value;
+
+    if (monthlyIncome == '') {
+        rootBudget.classList.remove('hide');
+        rootBudget.innerHTML = 'Por favor inserta un ingreso mensual.'
+    } else {
+        localStorage.setItem('Ingreso', monthlyIncome);
+        localStorage.setItem('Comida', foodBudget);
+        localStorage.setItem('Renta', rentBudget);
+        localStorage.setItem('Transporte', transportBudget);
+        localStorage.setItem('Bootcamp', bootCampBudget);
+        goingSavings();
+    }
+
+}
+
 
 
 
 // events to save data user
 submitInfoNewUser.addEventListener('click', saveInfoNewUser);
+submitInfoBudget.addEventListener('click', saveBudgetInfo);
