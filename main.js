@@ -24,6 +24,7 @@ let nameRegister = document.getElementById('name');
 let mailRegister = document.getElementById('e-mail');
 let passRegister = document.getElementById('pass');
 let pass2Register = document.getElementById('pass2');
+let root = document.getElementById('root');
 
 
 
@@ -78,22 +79,30 @@ submitInfoBudget.addEventListener('click', goingSavings);
 
 // functions to save data user//
 let saveInfoNewUser = () => {
-    goingBudget();
     //Data capture written in the inputs
     nameRegister = document.getElementById('name').value;
     mailRegister = document.getElementById('e-mail').value;
     passRegister = document.getElementById('pass').value;
     pass2Register = document.getElementById('pass2').value;
-    //saving data in localstorage
-    localStorage.setItem('usuario', nameRegister);
-    localStorage.setItem('mail', mailRegister);
-    localStorage.setItem('contraseña', passRegister);
-    localStorage.setItem('verificar-contraseña', pass2Register);
-    //clearinputs
-    document.getElementById('name').value = '';
-    document.getElementById('e-mail').value = '';
-    document.getElementById('pass').value = '';
-    document.getElementById('pass2').value = '';
+
+    if (passRegister === pass2Register) {
+        //saving data in localstorage
+        localStorage.setItem('usuario', nameRegister);
+        localStorage.setItem('mail', mailRegister);
+        localStorage.setItem('contraseña', passRegister);
+        localStorage.setItem('verificar-contraseña', pass2Register);
+        //clearinputs
+        document.getElementById('name').value = '';
+        document.getElementById('e-mail').value = '';
+        document.getElementById('pass').value = '';
+        document.getElementById('pass2').value = '';
+        goingBudget();
+    } else {
+        root.classList.remove('hide');
+        root.innerHTML = 'Las contraseñas no coinciden'
+
+    }
+
 
     // console.log(usuario, mail, contraseña, verificar - contraseña);
 }
