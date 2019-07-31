@@ -486,8 +486,4 @@ progress[value].color-expenses {
         padding: 0.5rem;
         font-size: 35px;
     }
-    progress[value] {
-        width: 200px;
-        height: 20px;
-    }
 }
