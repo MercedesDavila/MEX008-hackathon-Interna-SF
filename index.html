@@ -43,7 +43,7 @@
                     <input type="text" name="name" id="name" placeholder="Nombre">
                     <input type="text" name="e-mail" id="e-mail" placeholder="Correo electrónico">
                     <input type="password" name="pass" id="pass" placeholder="Contraseña">
-                    <p class="hide" id="root">soy el root</p>
+                    <p class="hide" id="root"></p>
                     <input type="password" name="pass" id="pass2" placeholder="Confirmar contraseña">
                     <input type="button" value="Aceptar" id="accept" class="buttons">
                 </div>
@@ -96,7 +96,7 @@
                         </div>
 
                     </div>
-                    <p id="root-bud" class="hide">soy el root</p>
+                    <p id="root-bud" class="hide"></p>
                     <input type="button" value="Aceptar" class="buttons" id="accept-budget">
                 </div>
 
@@ -110,6 +110,7 @@
             <div class="homepage-body">
                 <div class="register-title">
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <h1>Easy Budget</h1>
                     <figure>
                         <img src="img/easy-budget.png" alt="logo">
                     </figure>
@@ -159,7 +160,7 @@
 
         <section class="register" id="savings">
             <div class="register-body">
-                <div class="register-title savings">
+                <div class="register-title savings-title">
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                     <h1>Ahorros</h1>
                     <figure>
@@ -168,26 +169,26 @@
                 </div>
                 <div class="savings-body">
                     <h3>¿De qué sirve ahorrar si no tenemos una meta?</h3>
-                    <p>Ingresa tu meta y cuánto necesitas para cumplirla</p>
+                    <p>Ingresa tus metas y cuánto necesitas para cumplirla:</p>
                     <div class="goals-ammount">
                         <div class="goals">
-                            <input id="goal-1" type="text" placeholder="Meta">
+                            <input id="goal-1" type="text" placeholder="Meta" class="savings">
 
-                            <input id="amount-1" type="text" placeholder="Monto">
+                            <input id="amount-1" type="text" placeholder="Monto" class="savings">
                         </div>
-                        <p>Plazo: <input id="time-1" list="time1" name="time1">
-                            <datalist id="time1">
+                        <input id="time-1" list="time1" placeholder="Plazo" name="time1" class="savings-date">
+                        <datalist id="time1">
                                 <option value="1 mes">1 mes</option>
                                 <option value="6 meses">6 meses</option>
                                 <option value="1 año">1 año</option>
                             </datalist>
                         </p>
                         <div class="goals">
-                            <input id="goal-2" type="text" placeholder="Meta">
-                            <input id="amount-2" type="text" placeholder="Monto">
+                            <input id="goal-2" type="text" placeholder="Meta" class="savings">
+                            <input id="amount-2" type="text" placeholder="Monto" class="savings">
                         </div>
-                        <p>Plazo: <input id="time-2" list="time2" name="time2">
-                            <datalist id="time2">
+                        <input id="time-2" list="time2" name="time2" placeholder="Plazo" class="savings-date">
+                        <datalist id="time2">
                                 <option value="1 mes">1 mes</option>
                                 <option value="6 meses">6 meses</option>
                                 <option value="1 año">1 año</option>
@@ -195,7 +196,7 @@
                         </p>
                     </div>
                     <div class="plus"><a class="plus-button">+</a><span>Agregar meta</span></div>
-                    <p id="root-savings" class="hide">soy el root</p>
+                    <p id="root-savings" class="hide"></p>
                     <input type="button" value="Aceptar" class="buttons" id="accept-savings">
                 </div>
             </div>
