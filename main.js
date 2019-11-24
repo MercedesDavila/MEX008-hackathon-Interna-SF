@@ -12,6 +12,8 @@ const enterHome = document.getElementById('enter');
 const registerButton = document.getElementById('register-button');
 const budgetA = document.getElementById('budget-a');
 const homeA = document.getElementById('home-a');
+const savingsA = document.getElementById('savings-a');
+const logOutA = document.getElementById('log-out');
 const nameLogin = document.getElementById('name-login');
 const submitInfoNewUser = document.getElementById('accept');
 const submitInfoBudget = document.getElementById('accept-budget');
@@ -20,6 +22,9 @@ const submitInfoSavings = document.getElementById('accept-savings');
 
 
 // declaring global variables to save user data
+//Login Section Data: Capturing Data
+let rootLogin = document.getElementById('root-login');
+
 // Register Section Data: Capturing Data
 let nameRegister = document.getElementById('name');
 let mailRegister = document.getElementById('e-mail');
@@ -77,7 +82,9 @@ const goingBudget = () => {
     hideSection('register');
     hideSection('HomePage');
     hideSection('login');
+    hideSection('savings');
     showSection('budget');
+
 }
 
 const goingSavings = () => {
@@ -88,14 +95,23 @@ const goingSavings = () => {
     showSection('savings');
 }
 
+const goingLogin = () => {
+    hideSection('budget');
+    hideSection('register');
+    hideSection('HomePage');
+    hideSection('savings');
+    showSection('login');
+}
 
 //events
+
 enterHome.addEventListener('click', goingHome);
+logOutA.addEventListener('click', goingLogin);
 
 registerButton.addEventListener('click', goingRegister);
 budgetA.addEventListener('click', goingBudget);
 homeA.addEventListener('click', goingHome);
-
+savingsA.addEventListener('click', goingSavings);
 
 // functions to save data user//
 //Save RegisterData
@@ -108,10 +124,10 @@ let saveInfoNewUser = () => {
 
     if (passRegister === pass2Register) {
         //saving data in localstorage
-        localStorage.setItem('usuario', nameRegister);
-        localStorage.setItem('mail', mailRegister);
-        localStorage.setItem('contraseña', passRegister);
-        localStorage.setItem('verificar-contraseña', pass2Register);
+        localStorage.setItem('Usuario', nameRegister);
+        localStorage.setItem('Mail', mailRegister);
+        localStorage.setItem('Contraseña', passRegister);
+        localStorage.setItem('Verificar-contraseña', pass2Register);
         //clearinputs
         document.getElementById('name').value = '';
         document.getElementById('e-mail').value = '';
@@ -120,7 +136,7 @@ let saveInfoNewUser = () => {
         goingBudget();
     } else {
         root.classList.remove('hide');
-        root.innerHTML = 'Las contraseñas no coinciden'
+        root.innerHTML = 'Las contraseñas no coinciden';
 
     }
 
@@ -136,7 +152,7 @@ let saveBudgetInfo = () => {
 
     if (monthlyIncome == '') {
         rootBudget.classList.remove('hide');
-        rootBudget.innerHTML = 'Por favor inserta un ingreso mensual.'
+        rootBudget.innerHTML = 'Por favor inserta un ingreso mensual.';
     } else {
         localStorage.setItem('Ingreso', monthlyIncome);
         localStorage.setItem('Comida', foodBudget);
@@ -158,7 +174,7 @@ let saveSavingsInfo = () => {
         time2 = document.getElementById('time-2').value;
         if (goal1, amount1, time1 == '') {
             rootSavings.classList.remove('hide');
-            rootSavings.innerHTML = 'Por favor ingresa una meta.'
+            rootSavings.innerHTML = 'Por favor ingresa una meta.';
         } else {
             localStorage.setItem('Meta1', goal1);
             localStorage.setItem('Monto1', amount1);
@@ -179,3 +195,30 @@ submitInfoSavings.addEventListener('click', saveSavingsInfo)
 
 // Functions to get data user//
 //Get LoginData
+let getinfoLogin = () => {
+    const mailLogin = document.getElementById('name-login').value;
+    const passLogin = document.getElementById('pass-login').value;
+    if (mailLogin == localStorage.getItem('Mail'), passLogin == localStorage.getItem('Contraseña')) {
+        localStorage.getItem('Mail');
+        localStorage.getItem('Contraseña');
+        goingHome();
+
+    } else {
+        rootLogin.classList.remove('hide');
+        rootLogin.innerHTML = 'El usuario o contraseña son incorrectos';
+
+    }
+
+
+}
+
+// let getInfoBudget = () => {
+
+//     totalSavings = localStorage.getItemById('Monto1');
+//     document.getItemById('total-savings').innerHTML = totalSavings;
+
+
+// }
+
+//events to get data user
+enterHome.addEventListener('click', getinfoLogin);
